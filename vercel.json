@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run lint && npm run test:run && npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/produtos",
+      "destination": "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
+    }
+  ],
+  "framework": "vite",
+  "installCommand": "npm ci --include=dev"
+}

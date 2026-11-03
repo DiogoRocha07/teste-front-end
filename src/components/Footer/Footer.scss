@@ -1,0 +1,147 @@
+.footer {
+  color: #3f3f40;
+
+  &__main {
+    background-color: #f4f4f4;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 354px minmax(0, 1fr);
+    align-items: center;
+    gap: 90px;
+    width: calc(100% - 32px);
+    max-width: 1280px;
+    min-height: 282px;
+    margin-inline: auto;
+    padding-block: 42px;
+  }
+
+  &__brand {
+    min-width: 0;
+  }
+
+  &__logo {
+    width: 164px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  &__description {
+    max-width: 354px;
+    margin: 18px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 27px 0 0;
+    padding: 0;
+    list-style: none;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__groups {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-content: center;
+    gap: 100px;
+    min-height: 198px;
+    padding-left: 90px;
+    border-left: 1px solid rgba(40, 40, 40, 0.18);
+  }
+
+  &__group {
+    min-width: 0;
+  }
+
+  &__group-title {
+    margin: 0;
+    color: rgba(34, 34, 34, 0.71);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0 0;
+    padding: 0;
+    color: rgba(34, 34, 34, 0.71);
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    list-style: none;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46.84px;
+    padding: 12px 16px;
+    background-color: #fff;
+    text-align: center;
+
+    small {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  }
+
+  a:focus-visible {
+    outline: 2px solid #3442b5;
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 1200px) {
+    &__container {
+      gap: 40px;
+    }
+
+    &__groups {
+      gap: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__container {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+      padding-block: 32px;
+    }
+
+    &__groups {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      min-height: 0;
+      padding: 32px 0 0;
+      border-top: 1px solid rgba(40, 40, 40, 0.18);
+      border-left: 0;
+    }
+
+    &__items {
+      overflow-wrap: anywhere;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__groups {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+    }
+  }
+}

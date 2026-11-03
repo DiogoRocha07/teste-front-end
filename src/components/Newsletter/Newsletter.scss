@@ -1,0 +1,134 @@
+.newsletter {
+  margin-top: 90px;
+  padding-block: 40px;
+  background-color: #271c47;
+  color: #fff;
+
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(0, 515px) minmax(0, 639px);
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: calc(100% - 32px);
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__description {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  &__form {
+    min-width: 0;
+  }
+
+  &__fields {
+    display: grid;
+    grid-template-columns: minmax(0, 233px) minmax(0, 233px) 157px;
+    gap: 8px;
+
+    input {
+      width: 100%;
+      min-width: 0;
+      height: 42px;
+      padding: 12px 24px;
+      border: 1px solid #e7e7e7;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #3f3f40;
+      font-size: 14px;
+      line-height: 18px;
+
+      &::placeholder {
+        color: #707070;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__button {
+    height: 42px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #f7ca11;
+    color: #161615;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__consent {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    cursor: pointer;
+
+    input {
+      flex-shrink: 0;
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      accent-color: #f7ca11;
+    }
+  }
+
+  &__message {
+    margin: 8px 0 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  input:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #f7ca11;
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 1100px) {
+    &__container {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+    }
+
+    &__form {
+      width: 100%;
+      max-width: 639px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 64px;
+    padding-block: 32px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__fields {
+      grid-template-columns: minmax(0, 1fr);
+
+      input {
+        font-size: 16px;
+      }
+    }
+  }
+}

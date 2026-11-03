@@ -1,0 +1,113 @@
+.product-card {
+  min-height: 500px;
+  padding: 32px 12.39px 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  box-shadow: 0 3px 19px rgba(0, 0, 0, 0.22);
+
+  &__image {
+    width: 100%;
+    max-width: 278.1px;
+    height: 228px;
+    margin-inline: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    min-height: 46px;
+    margin: 9px 0 0;
+    color: #3f3f40;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+    overflow-wrap: anywhere;
+  }
+
+  &__image-trigger,
+  &__name-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid #3442b5;
+      outline-offset: 3px;
+    }
+  }
+
+  &__name-trigger {
+    min-height: inherit;
+    font: inherit;
+    line-height: inherit;
+    overflow-wrap: anywhere;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44px;
+    margin-top: auto;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #3442b5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid #271c47;
+      outline-offset: 3px;
+    }
+  }
+
+  &__pricing {
+    margin-top: 12px;
+  }
+
+  &__previous-price {
+    margin: 0;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__price {
+    margin: 2px 0 0;
+    color: #3f3f40;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__installments {
+    margin: 2px 0 0;
+    color: #3f3f40;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__shipping {
+    margin: 7px 0 0;
+    color: #3442b5;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,93 @@
+.hero-banner {
+  min-height: 390px;
+  background-color: #271c47;
+  background-image: url("../../assets/images/hero-black-friday.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  &__container {
+    width: calc(100% - 32px);
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-block: 78px 55px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    max-width: 822px;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
+  &__offer {
+    min-height: 48px;
+    margin: 18px 0 41px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+
+    strong {
+      color: #f7ca11;
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    min-height: 50px;
+    border-radius: 5px;
+    background-color: #f7ca11;
+    color: #271c47;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+
+    &:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+    }
+  }
+
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: min(966px, 100%);
+    background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      padding-block: 48px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 1.15;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__offer {
+      margin-block: 24px 32px;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+}
