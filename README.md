@@ -2,6 +2,8 @@
 
 Implementação do desafio Front-End Jr da Econverse: página responsiva com vitrines de produtos, carrosséis e modal de detalhes, desenvolvida a partir do layout fornecido no Figma.
 
+**Demonstração:** [Acessar o projeto](https://teste-front-end-plum-seven.vercel.app/)
+
 ## Tecnologias
 
 - React e TypeScript
